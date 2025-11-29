@@ -15,3 +15,17 @@ target_include_directories(out
         .
         calico
 )
+
+target_compile_options(out
+    PRIVATE
+        -Wall
+        -Wextra
+        -O3
+        -flto
+        -std=c99
+)
+
+target_link_options(out
+    PRIVATE
+        -flto
+)
