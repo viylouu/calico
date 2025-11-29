@@ -7,6 +7,7 @@ add_executable(out)
 target_sources(out
     PRIVATE
         core/platf/platf.c
+        core/core.c
         src/main.c
 )
 
@@ -18,6 +19,7 @@ target_include_directories(out
 
 target_compile_options(out
     PRIVATE
+        -pedantic
         -Wall
         -Wextra
         -O3
